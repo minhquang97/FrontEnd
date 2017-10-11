@@ -1,3 +1,8 @@
+@font-face
+{
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.ttf");
+}
 #layout
 {
 	width:100%;
@@ -75,7 +80,7 @@
 
 #iconmenu>a
 {
-	font-family: Arial;
+	font-family: 'Lato';
 	font-size: 0.6em;
 	color:#673ab7;
 	text-align: center;
@@ -98,7 +103,8 @@
 }
 #Dangnhap>a
 {
-	font-size: 18px;
+	font-family:Lato;
+	font-size: 16px;
 	text-decoration: none;
 	color: #673ab7;
 }
@@ -120,7 +126,8 @@
 }
 #Dangki>a
 {
-	font-size:18px;
+	font-family: Lato;
+	font-size:16px;
 	color:#673ab7;
 	text-decoration: none;
 }
@@ -152,7 +159,7 @@
 span#Summer{
 	color: #00bcd4;
 	font-size: 39px;
-	font-family: Arial;
+	font-family: Lato;
 }
 #content1
 {
@@ -169,6 +176,7 @@ span#Summer{
 }
 #content2>span
 {
+	font-family: Lato;
 	color:#673ab7;
 	font-size: 12px;
 }
@@ -193,6 +201,7 @@ span#Summer{
 }
 #Xemtiep>a
 {
+	font-family: Lato;
 	color: #673ab7;
 	font-size: 13px;
 	text-decoration: none;
@@ -216,6 +225,7 @@ span#Summer{
 }
 #Hocthu>a
 {
+	font-family: Lato;
 	color: #673ab7;
 	font-size: 13px;
 	text-decoration: none;
@@ -224,4 +234,41 @@ span#Summer{
 #Hocthu:hover
 {
 	background-color: #e91e63;
+}
+
+#Botmenu
+{
+	width: 95%;
+	height:60px;
+	position: absolute;
+	position: fixed;
+	top: 92%;
+}
+
+#Huongdan
+{
+	width:100px;
+	height: 40px;
+	margin-left: 90%;
+	border-radius: 20px;
+	background-color: yellow;
+	text-align: center;
+	padding-top:10px;
+}
+
+#Huongdan>a:hover
+{
+	color: red;
+	text-decoration: none;
+}
+#Huongdan>a
+{
+	text-decoration: none;
+}
+#Huongdan>a>span
+{
+	font-family: Lato;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
 }
