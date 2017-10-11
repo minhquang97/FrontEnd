@@ -76,7 +76,7 @@
 #iconmenu>a
 {
 	font-family: Arial;
-	font-size: 11px;
+	font-size: 0.6em;
 	color:#673ab7;
 	text-align: center;
 	text-decoration: none; 	
@@ -84,40 +84,54 @@
 
 #Dangnhap
 {
-	width: 15%;
+	width: 20%;
 	height: 40px;
 	padding-top: 20px;
-	margin-left:50%;
+	margin-left:60%;
 /*	border:1px solid black;
 */
+	margin-top: 2%;
+	padding-top: 10px;
+/*	background-color: #00bcd4;
+*/	text-align: center;
+	border-radius:20px;
 }
 #Dangnhap>a
 {
-	font-size: 14px;
-	color: #00bcd4;
+	font-size: 18px;
 	text-decoration: none;
+	color: #673ab7;
 }
-
+#Dangnhap:hover
+{
+	background-color: #00bcd4;
+}
 #Dangki
 {
 	width: 120px;
-	height: 45px;
+	height: 40px;
 	border-radius: 20px;
 /*	border:1px solid black;
-*/	margin-left: 2%;
-	margin-top: 10%;
-	background-color: #00bcd4;
+*/	margin-left: 0%;
+	margin-top:2%;
+	padding-top: 10px;
+/*	background-color: #00bcd4;
+*/	text-align: center;
 }
 #Dangki>a
 {
 	font-size:18px;
-	color:white;
+	color:#673ab7;
 	text-decoration: none;
 }
+#Dangki:hover
+{
+	background-color: #00bcd4;
 
+}
 #iconmenu>a:hover
 {
-	color: yellow;
+	color: red;
 }
 
 #content
@@ -177,10 +191,16 @@ span#Summer{
 	border-radius: 20px;
 	border-color: #673ab7;
 }
-#Xemtiep>span
+#Xemtiep>a
 {
 	color: #673ab7;
 	font-size: 13px;
+	text-decoration: none;
+}
+
+#Xemtiep:hover
+{
+	background-color: #e91e63;
 }
 
 #Hocthu
@@ -191,12 +211,17 @@ span#Summer{
 /*	border: solid;
 */	text-align: center;
 	padding-top: 10px;
-	background-color: #e91e63;
+	border: 2px solid #673ab7;
 	border-radius: 20px;
 }
-#Hocthu>span
+#Hocthu>a
 {
-	color: white;
+	color: #673ab7;
 	font-size: 13px;
+	text-decoration: none;
 }
 
+#Hocthu:hover
+{
+	background-color: #e91e63;
+}
