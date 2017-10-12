@@ -3,58 +3,81 @@
 	font-family: "Lato";
 	src: url("../fonts/Lato-Black.ttf");
 }
+@font-face
+{
+	font-family: "Lato-Regular";
+	src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face
+{
+	font-family: "lato-Italic";
+	src: url("../fonts/Lato-Italic.ttf");
+}
+@font-face
+{
+	font-family: "vnf-quicksand";
+	src: url('../fonts/vnf-quicksand-bold.ttf');
+}
+
+body{
+	background: #fff;
+	color:333;
+}
+
+@media all and (min-width: 320px)and (max-width: 860px){
+	body{
+		background: #e7e7e7;
+	}
+}
 #layout
 {
-	width:100%;
-	height:700px;
-	position: relative;
+	width:1280px;
+	height:720px;	
 }
 #layout1
 {
 	display: flex;
+	position: relative;
 }
 #left
 {
 	width: 50%;
-	height: 690px;
-/*	 black;
-*/}
+	height: 720px;
+}
 
 #right
 {
 	width: 50%;
-	height:690px;
-/*	 black;
-*/	background-image: url('../fonts/slide-section1.jpg');
+	height:720px;
+	background-image: url('../fonts/slide-section1.jpg');
 	background-repeat: no-repeat;
 }
 
-#menu
+.menu
 {
 	width:100%;
 	height:60px;
-/*	border: 1px solid black;
-*/	position: absolute;
+	position: absolute;
 	position: fixed;
 	top: 3px;
 	display: flex;
 }
 
-#menu-left
+.menu-left
 {
 	display: flex;
 	height:60px;
-	width: 49%;
+	width: 50%;
 /*	border: 1px solid black;
 */	top: 3px;
 }
-#menu-right
+.menu-right
 {
 	display: flex;
 	height:60px;
-	width: 49%;
-/*	border: 1px solid black;
-*/	top: 3px;
+	width: 50%;
+	position: relative;
+	top: 3px;
 }
 
 #icon-hapo
@@ -95,8 +118,7 @@
 	margin-left:60%;
 	margin-top: 2%;
 	padding-top: 10px;
-/*	background-color: #00bcd4;
-*/	text-align: center;
+	text-align: center;
 	border-radius:20px;
 }
 #login-user>a
@@ -104,36 +126,26 @@
 	font-family:Lato;
 	font-size: 16px;
 	text-decoration: none;
-	color: #673ab7;
-}
-#login-user:hover
-{
-	background-color: #00bcd4;
+	color: #00bcd4;
 }
 #register-user
 {
-	width: 120px;
-	height: 40px;
+	width: 17%;
+	height: 55%;
 	border-radius: 20px;
-/*	 black;
-*/	margin-left: 0%;
 	margin-top:2%;
-	padding-top: 10px;
-/*	background-color: #00bcd4;
-*/	text-align: center;
+	padding-top: 1%;
+	background-color: #00bcd4;
+	text-align: center;
 }
 #register-user>a
 {
 	font-family: Lato;
 	font-size:16px;
-	color:#673ab7;
+	color:#ffffff;
 	text-decoration: none;
 }
-#register-user:hover
-{
-	background-color: #00bcd4;
 
-}
 .nav-menu>a:hover
 {
 	color: red;
@@ -143,9 +155,9 @@
 #content
 {
 	width: 60%;
-	height: 600px;
+	height: 90%;
 	margin-left: 25%;
-	margin-top:100px;
+	margin-top:12%;
 }
 
 #img-hapojc
@@ -155,16 +167,18 @@
 	background-image: url('../fonts/logo.png');
 	background-size: 100% 100%;
 }
-span#Summer{
-	color: #00bcd4;
-	font-size: 39px;
-	font-family: Lato;
-}
+
 #content1
 {
 	width: 100%;
-	height: 170px;
-	margin-top: 50px;
+	height: 150px;
+	margin-top: 30px;
+	letter-spacing: 0.2px;
+}
+span#Summer{
+	color: #00bcd4;
+	font-size: 31px;
+	font-family: vnf-quicksand;
 }
 
 #content2
@@ -172,6 +186,8 @@ span#Summer{
 	width: 100%;
 	height: 120px;
 	margin-top: 40px;
+	text-align:justify;
+	letter-spacing: 0.05em;
 }
 #content2>span
 {
@@ -206,49 +222,41 @@ span#Summer{
 	text-decoration: none;
 }
 
-#next:hover
-{
-	background-color: #e91e63;
-}
-
 #learn
 {
 	width: 60%;
 	height: 30px;
 	margin-left: 10%;
-/*	border: solid;
-*/	text-align: center;
+	text-align: center;
 	padding-top: 10px;
 	border: 2px solid #673ab7;
 	border-radius: 20px;
+	background-color: #e91e63;
 }
 #learn>a
 {
 	font-family: Lato;
-	color: #673ab7;
+	color: #ffffff;
 	font-size: 13px;
 	text-decoration: none;
 }
 
-#learn:hover
-{
-	background-color: #e91e63;
-}
 
 #bot-support
 {
 	width: 95%;
 	height:60px;
+	position: relative;
 	position: absolute;
 	position: fixed;
-	top: 92%;
+	bottom: 20px;
 }
 
 #support
 {
-	width:100px;
-	height: 40px;
-	margin-left: 90%;
+	width:8%;
+	height: 50%;
+	margin-left: 95%;
 	border-radius: 20px;
 	background-color: yellow;
 	text-align: center;
@@ -329,21 +337,21 @@ span#Summer{
 .course-header>.n5>span
 {
 	color: #00bcd4;
-	font-family: Lato;
+	font-family: vnf-quicksand;
 	font-size: 22px;
 }
 
 .course-header>.n4>span
 {
 	color:#673ab7;
-	font-family: 'Lato';
+	font-family: vnf-quicksand;
 	font-size: 22px;
 }
 
 .course-header>.n3>span
 {
 	color: #e91e63;
-	font-family: Lato;
+	font-family: vnf-quicksand;
 	font-size: 22px;
 }
 
@@ -404,18 +412,18 @@ a.button-font
 
 #book-layout
 {
+	margin-top:100px;
 	width: 100%;
-	height: 550px;
-	position: relative;
-	display:flex;
-
-
+	height: 600px;
+/*	position: relative;
+*/	display:flex;
+	border: solid black;
 }
 
 #book-layout-left
 {
 	width: 35%;
-	height: 70%;
+	height: 60%;
 	margin-top: 50px;
 	margin-left: 100px;
 }
@@ -497,7 +505,8 @@ a.button-font
 {
 	color: #673ab7;
 	font-size: 16px;
-	font-family: Lato;
+	font-family: vnf-quicksand;
+
 }
 
 .button-register-book
@@ -509,4 +518,216 @@ a.button-font
 	text-align: center;
 	background-color: #00bcd4;
 	padding: 10px;
+}
+.button-register-book>a{
+	font-family: Lato;
+	font-size: 14px;
+}
+
+#student
+{
+	margin-top:;
+	width:100%;
+	height: 600px;
+	position: relative;
+	border:1px solid black;
+}
+
+#student-function
+{
+	margin-top:200px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: :5%;
+	height: 300px;
+/*	position: relative;
+*/	display: flex;
+
+}
+
+.student-box
+{
+	width: 15%;
+	height: 100%;
+	margin-left:5%;
+}
+
+.student-circle {
+	width: 150px;
+	height: 150px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin-left: 10px;
+	background-image: url('../images/aa9fb3f352e89b54044977146d31604779c457d5.png');
+	background-size: 100% 100%;
+
+}
+
+.student-header{
+	width:100%;
+	height: 30px;
+	margin-top:50px;
+	text-align: center;
+}
+
+.student-header>a{
+	font-size: 14px;
+	font-family: vnf-quicksand;
+	text-decoration: none;
+	color: black;
+}
+
+.student-header>a:hover
+{
+	color: red;
+	text-decoration: initial;
+}
+
+#teacher
+{
+	width: 100%;
+	height: 600px;
+	margin-top: 0px;
+	display: flex;
+}
+
+#teacher-left
+{
+	width: 50%;
+	height: 600px;
+	background-image: url('../images/40a6147feea84e1e80734f5ae3d7429dac2ae702.png')
+}
+#teacher-right
+{
+	width: 50%;
+	height: 600px;
+}
+
+#teacher-content
+{
+	width: 70%;
+	height: 65%;
+	margin-left: 15%;
+	margin-top:15%;
+	text-align: justify;
+}
+
+#teacher-content>h2> span{
+	font-family: vnf-quicksand;
+}
+#teacher-content>p
+{
+	font-family: 'lato-Italic';
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.img-circle
+{
+	border-radius: 50%;
+}
+#blog{
+	width: 100%;
+	height: 540px;
+	margin-top: 10px;
+	position: relative;
+}
+#blog-menu
+{
+	width:100%;
+	height: 60px;
+	background-color: #ffffff;
+}
+#blog-content
+{
+	width: 100%;
+	height: 540px;
+	position: relative;
+	background-color: #f9f9f9;
+}
+
+#comment1
+{
+	width: 40%;
+	height: 35%;
+	position: absolute;
+	top:8%;
+	left: 5%;
+	position: relative;
+	border-radius: 20px;
+	text-align: justify;
+	background-color: #ffffff;
+	padding: 5px;
+}
+
+#comment2{
+	width:35%;
+	height: 30%;
+	position: absolute;
+	top:18%;
+	right:8%;
+	border-radius: 20px;
+	text-align: justify;
+	background-color: #ffffff;
+	padding: 5px;
+}
+
+#comment3
+{
+	width: 35%;
+	height: 30%;
+	position: absolute;
+	bottom: 13%;
+	left:12%;
+	border-radius: 20px;
+	text-align: justify;
+	background-color: #ffffff;
+	padding: 5px;
+}
+
+#comment4{
+	width: 32%;
+	height: 26%;
+	position: absolute;
+	bottom: 13%;
+	right:11%;
+	border-radius: 20px;
+	text-align: justify;
+	background-color: #ffffff;
+	padding: 5px;
+}
+.img1
+{	width: 80px;
+	height: 70px;
+	position: absolute;
+	right: 30px; 
+	bottom: -35px;
+}
+
+.name-box
+{
+	width: 130px;
+	height: 35px;
+	position: absolute;
+	right: 130px;
+	bottom: 5px;
+	text-align: right;
+}
+
+.name-box>span
+{
+	font-family: Lato-Regular;
+	font-size:10px;
+}
+
+.name-box>span>span
+{
+	font-family: lato-Italic;
+}
+
+.comment-font
+{
+	font-family: Lato-Regular;
+	font-size:11px;
 }
