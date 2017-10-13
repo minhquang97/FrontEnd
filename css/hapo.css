@@ -24,11 +24,15 @@ body{
 	color:333;
 }
 
-@media all and (min-width: 320px)and (max-width: 860px){
+@media (min-width: 320px)and (max-width: 768px){
 	body{
 		background: #e7e7e7;
+		/*width: 320px;*/
+
 	}
 }
+
+@media (min-width: 770px ){}
 #layout
 {
 	width:1280px;
@@ -417,7 +421,6 @@ a.button-font
 	height: 600px;
 /*	position: relative;
 */	display:flex;
-	border: solid black;
 }
 
 #book-layout-left
@@ -528,9 +531,9 @@ a.button-font
 {
 	margin-top:;
 	width:100%;
-	height: 600px;
+	/*height: 600px;*/
 	position: relative;
-	border:1px solid black;
+	display: table;
 }
 
 #student-function
@@ -541,7 +544,8 @@ a.button-font
 	margin-right: :5%;
 	height: 300px;
 /*	position: relative;
-*/	display: flex;
+/**/	
+	/*display: flex;*/
 
 }
 
@@ -550,8 +554,14 @@ a.button-font
 	width: 15%;
 	height: 100%;
 	margin-left:5%;
+	float: left;
 }
 
+@media (max-width: 992px){
+	.student-box{
+		width: 40%;
+	}
+}
 .student-circle {
 	width: 150px;
 	height: 150px;
@@ -587,19 +597,27 @@ a.button-font
 #teacher
 {
 	width: 100%;
-	height: 600px;
-	margin-top: 0px;
+	margin-top: 150px;
 	display: flex;
+
 }
 
 #teacher-left
-{
+{	
+	float: left;
 	width: 50%;
-	height: 600px;
-	background-image: url('../images/40a6147feea84e1e80734f5ae3d7429dac2ae702.png')
+	height: 640px;
+	background: linear-gradient(
+		to top,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0),
+		#ffffff 100%
+		), url("../images/40a6147feea84e1e80734f5ae3d7429dac2ae702.png");
 }
+
 #teacher-right
-{
+{	
+	float: left;
 	width: 50%;
 	height: 600px;
 }
@@ -612,7 +630,18 @@ a.button-font
 	margin-top:15%;
 	text-align: justify;
 }
-
+@media (max-width: 768px){
+	#teacher {
+		height: 1200px;
+		display: block;
+	}
+	#teacher-left {
+		width: 100%;
+	}
+	#teacher-right {
+		width: 100%;
+	}
+}
 #teacher-content>h2> span{
 	font-family: vnf-quicksand;
 }
@@ -629,8 +658,8 @@ a.button-font
 }
 #blog{
 	width: 100%;
-	height: 540px;
-	margin-top: 10px;
+	height: 630px;
+	margin-top: 50px;
 	position: relative;
 }
 #blog-menu
@@ -642,7 +671,7 @@ a.button-font
 #blog-content
 {
 	width: 100%;
-	height: 540px;
+	height: 570px;
 	position: relative;
 	background-color: #f9f9f9;
 }
@@ -697,6 +726,21 @@ a.button-font
 	background-color: #ffffff;
 	padding: 5px;
 }
+/*@media (max-width: 992px){
+	#comment1{
+		width: 100%;
+		display: table;
+	}
+	#comment2{
+		width: 100%;
+	}
+	#comment3{
+		width: 100%;
+	}
+	#comment4{
+		width: 100%;
+	}
+}*/
 .img1
 {	width: 80px;
 	height: 70px;
@@ -730,4 +774,74 @@ a.button-font
 {
 	font-family: Lato-Regular;
 	font-size:11px;
+}
+
+#contact
+{
+	width: 100%;
+	border:solid black;
+	position: relative;
+	margin-top: 50px;
+	display: flex;
+}
+
+#contact-left
+{
+	height: 650px;
+	width: 50%;
+	border: solid black;
+	float: left;
+}
+
+#contact-right
+{
+	height: 650px;
+	width: 50%;
+	border: solid black;
+}
+#input-header
+{
+	width: 100%;
+	height: 12%;
+	border: solid black;
+	border-radius:15px;
+}
+
+.input-sub-box
+{
+	margin-top: 5%;
+	width: 100%;
+	height: 5%;
+	border: solid black;
+	border-radius:15px;
+}
+
+#input-box
+{
+	width:50%;
+	margin-left: 30%;
+	margin-top: 18%;
+	height: 70%;
+	border: solid black;
+	position: relative;
+
+}
+
+#input-content
+{
+	width: 100%;
+	height: 25%;
+	margin-top: 5%;
+	border: solid black;
+	border-radius: 15px;
+}
+
+#input-button
+{
+	width: 30%;
+	height: 5%;
+	margin-top: 7%;
+	border:solid black;
+	border-radius: 15px;
+	margin-left: 70%;
 }
