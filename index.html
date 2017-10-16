@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Intern_Frontend</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-
 	<link rel="stylesheet" href="css/hapo.css">
-
+	<link rel="stylesheet" href="fonts/themify.ttf"
 </head>
 <body>
 	<div id="layout">
 	<div id="layout1">
-	<div id="left">
+	<div class="layout-sub">
 		<div id="content">
 			<div id="img-hapojc"></div>
 			<div id="content1">
@@ -33,12 +32,10 @@
 			</div>
 			</div>
 	</div>
-	<div id="right"></div>
-
-	<div id="bot-support">
-		<div id="support"> <a href=""><span >Hỗ trợ</span></a>
-		</div>
+	<div class="layout-sub">
+		<img src="fonts/slide-section1.jpg" width=100% height="100%">
 	</div>
+
 	</div>
 	</div>
 	</br> </br>
@@ -191,19 +188,132 @@
 	</div>
 	<div id="contact">
 		<div id=contact-left>
-			<div id="input-box">
-				<div id="input-header"></div>
-				<div class="input-sub-box"></div>
-				<div class="input-sub-box"></div>
-				<div class="input-sub-box"></div>
-				<div class="input-sub-box"></div>
-				<div id="input-content"></div>
-				<div id="input-button"></div>
-			</div>
+		
+			<form id="input-box" action="https://google.com">
+				<div id="input-header"><span>Đăng ký tư vấn</span></div>
+				<div class="input-sub-box">
+				<span class="icon-user"></span>
+				<input  type="text" name="name" placeholder="Tên của bạn"  ></div>
+				
+				<div class="input-sub-box">
+				<span class="icon-envelope"></span>
+				<input  type="text" name="email" placeholder="Email"  ></div>
+				
+				<div class="input-sub-box">
+				<span class="icon-screen-smartphone"></span>
+				<input  type="text" name="numberphone" placeholder="Số điện thoại"  ></div>
+				
+				<div class="input-sub-box">
+				<span class="icon-heart"></span>
+				<input  type="text" name="course" placeholder="Khóa học bạn quan tâm"  >
+				<div id="simple-lines-icon-arow-down"><span class="icon-arrow-down"> </span></div>
+				</div>
+
+				<div id="input-content">
+					<span class="icon-speech"></span>
+					<textarea name="message" rows="5" cols="30" placeholder="Để lại lời nhắn"></textarea>
+				</div>
+				
+				<input type="button" id="input-button" value="Gửi đăng ký ->">
+			</form>
 		</div>
 		<div id="contact-right"> 
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8130201700938!2d105.81926694994739!3d21.000130994063547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac85be3a80f7%3A0x26f3b5f7c126cf4c!2zMjMgVMO0IFbEqW5oIERp4buHbiwgS2jGsMahbmcgVHJ1bmcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1507891640990" width=100% height=650px frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
+	</div>
+	
+
+	<div id="last-layout">
+		<div id="last-layout-left">
+			<div id="last-menu">
+				<div class="last-menu-cols">
+				<div class="last-menu-header">
+				<span>TRANG CHỦ</span>
+				</div>
+				<div class="text-menu"><a href="">Khóa học </a></div>
+				<div class="text-menu"><a href=""> Why choose us</a></div>
+				<div class="text-menu"><a href=""> How it works</a></div>
+				<div class="text-menu"><a href=""> Giảng viên</a></div>
+				<div class="text-menu"><a href=""> Testimonials</a></div>
+				<div class="text-menu"><a href=""> Liên hệ</a></div>
+				</div>
+				<div class="last-menu-cols">
+					<div class="last-menu-header">
+					<span> BẢNG TIN </span></div>
+					<div class="text-menu"><a href=""> Lịch khai giảng</a></div>
+					<div class="text-menu"><a href=""> Lịch sự kiện</a></div>
+				</div>
+				<div class="last-menu-cols">
+				<div class="last-menu-header">
+					<span>KHÓA HỌC </span>
+				</div>
+				<div class="text-menu"><a href=""> Làm quen</a></div>
+				<div class="text-menu"><a href=""> Giao tiếp N4</a></div>
+				<div class="text-menu"><a href=""> Giao tiếp N3</a></div>
+				<div class="text-menu"><a href=""> Giao tiếp N2</a></div>	
+				<div class="text-menu"><a href=""> Giao tiếp N1</a></div>
+				<div class="text-menu"><a href=""> Tiếng Nhật IT</a></div>
+
+				</div>
+				<div class="last-menu-cols">	
+				<div class="last-menu-header">
+					<span> TỦ SÁCH </span>
+				</div>
+				<div class="text-menu"><a href=""> Giáo trình</a></div>
+				<div class="text-menu"><a href=""> Tài liệu Kanji </a></div>
+				<div class="text-menu"><a href=""> Tài liệu nghe</a></div>
+				<div class="text-menu"><a href=""> Tài liệu nói</a></div>
+				</div>
+				<div class="last-menu-cols">
+				<div class="last-menu-header">
+					<span>HỌC VIÊN </span>
+				</div>
+				<div class="text-menu"><a href=""> Học viên xuất sắc</a></div>
+				<div class="text-menu"><a href=""> Ý kiến học viên</a></div>
+					</div>
+				<div class="last-menu-cols">	
+				<div class="last-menu-header">
+					<span> GIẢNG VIÊN </span>
+				</div>
+				</div>
+				<div class="last-menu-cols">	
+					<div class="last-menu-header">
+					<span> BLOG </span>
+				</div>
+				</div>
+			</div>
+
+			<div id="last-set"> 
+				<div class="set-box"> 
+				<span>Privacy</span>
+				</div>
+				<div class="set-box"> 
+				<span>Term</span>
+				</div>
+				<div class="set-box"> 
+				<span>Settings</span>
+				</div>
+			</div>
+
+			<div id="last-icon"> 
+			<div class="icon-box"><span class="icon-social-facebook"></span> </div>
+			<div class="icon-box"><span class="icon-social-twitter"></span> </div>
+			<div class="icon-box"><span class="icon-social-linkedin"></span> </div>
+			<div class="icon-box"><span class="icon-social-youtube"></span> </div>
+			</div>
+
+			<div id="copyright">
+			<span> Copyright 2017 Haposoft. All right reserved
+			</div>
+				
+		</div>
+
+		<div id="last-layout-right">
+			<div id="plugin-facebook">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaposoft%2F&tabs=timeline&width=392&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="392" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+		</div>
+
 	</div>
 		</div>
 		<div class="menu">
@@ -220,9 +330,14 @@
 		</div>
 
 		<div class="menu-right">
-			<div id="login-user"><a href="">Đăng nhập</a></div>
-			<div id="register-user"><a href="">Đăng kí -></a></div>
+			<div class="button-nav login"><a href="" class="span-lato-blue">ĐĂNG NHẬP</a></div>
+			<div class="button-nav register"><a href="" class="span-lato-white">ĐĂNG KÝ &nbsp;-></a></div>
+			<div class="button-icon"><a href="" ><span class="icon-magnifier" style="color: #673ab7;font-size: 18px "></span></a></div>
 	 	</div>
+	</div>
+	<div id="bot-support">
+		<div id="support"> <a href=""><span >Hỗ trợ</span></a>
+		</div>
 	</div>
 </body>
 </html>
