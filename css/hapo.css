@@ -25,11 +25,6 @@
 	src: url('../fonts/vnf-quicksand-bold.ttf');
 }
 
-body{
-	background: #fff;
-	color:333;
-}
-
 @media (min-width: 320px)and (max-width: 768px){
 	body{
 		background: #e7e7e7;
@@ -46,7 +41,7 @@ body{
 #layout
 {
 	width:100%;
-	height:720px;	
+	height:690px;
 }
 #layout1
 {
@@ -55,8 +50,9 @@ body{
 }
 .layout-sub
 {
+	position: relative;
 	width: 50%;
-	height: 720px;
+	height: 690px;
 }
 
 .menu
@@ -74,13 +70,12 @@ body{
 	display: flex;
 	height:;
 	width: 50%;
-/*	border: 1px solid black;
-*/	
+
 }
 .menu-right
 {
 	display: flex;
-	height:;
+	height: 35%;
 	width: 50%;
 	position: relative;
 }
@@ -89,10 +84,7 @@ body{
 	width: 12%;
 	height: ;
 	margin: 10px;
-/*	border: 1px solid blue;
-*/	background-image: url('../fonts/logo.png');
-	background-repeat:no-repeat;
-	background-size: 100% 100%;
+
 }
 
 .nav-menu
@@ -101,14 +93,13 @@ body{
 	height: ;
 	padding-top: 12px;
 	margin-left:5px;
-/*	 black;
-*/	text-align: center;
+	text-align: center;
 }
 
 .nav-menu>a
 {
 	font-family: lato-regular;
-	font-size: 0.7em;
+	font-size: 0.72em;
 	color:#673ab7;
 	text-align: center;
 	text-decoration: none; 	
@@ -124,16 +115,15 @@ body{
 
 .button-nav.login
 {
+	height: 90%;
 	margin-left: 58%;
-	margin-top:2%;
-
-
+	margin-top:1%;
 }
 
 .button-nav.register
 {
 	margin-left:1%;
-	margin-top: 2%;
+	margin-top: 1%;
 	background: #00bcd4;
 }
 
@@ -153,7 +143,7 @@ body{
 }
 .button-icon
 {
-	margin-top: 3.2%;
+	margin-top: 1.6%;
 	margin-left: 2%;
 }
 .button-icon>a
@@ -169,46 +159,141 @@ body{
 
 #content
 {
+	position: relative;
 	width: 60%;
-	height: 90%;
+	height: 85%;
 	margin-left: 25%;
-	margin-top:12%;
+	margin-top:15%;
+	
+}
+
+
+#fill-content-reg-bot-1
+{
+	position: absolute;
+	width: 15%;
+	height: 3%;
+	background: #00bcd4;
+	top: 0%;
+	left: -22%;
+	border-radius: 20px;
 }
 
 #img-hapojc
 {
 	width: 55%;
-	height: 90px;
+	height: 50px;
 	background-image: url('../fonts/logo.png');
 	background-size: 100% 100%;
 }
 
 #content1
 {
+	position: relative;
 	width: 100%;
-	height: 150px;
-	margin-top: 30px;
+	margin-top: 40px;
 	letter-spacing: 0.2px;
 }
-span#Summer{
+span#summer{
 	color: #00bcd4;
-	font-size: 31px;
+	font-size: 38px;
 	font-family: vnf-quicksand;
 }
+#fill-content-reg-top
+{
+	position: absolute;
+	width: 15%;
+	height: 10%;
+	background: #00bcd4;
+	top: -10%;
+	left: -18%;
+	border-radius: 20px;
+}
 
+#fill-content-small-top
+{
+	position: absolute;
+	width: 7%;
+	height: 10%;
+	background: #f44336;
+	top: 2%;
+	left: -10%;
+	border-radius: 20px;
+}
+
+#fill-content-reg-bot1
+{
+	position: absolute;
+	width: 18%;
+	height: 10%;
+	background: #00bcd4;
+	bottom: 12%;
+	right: 0%;
+	border-radius: 20px;
+}
+
+#fill-content-reg-bot2
+{
+	position: absolute;
+	width: 18%;
+	height: 10%;
+	background: #ffc107;
+	bottom: -4%;
+	right: 3%;
+	border-radius: 20px;
+}
+
+#fill-content-small-bot
+{
+	position: absolute;
+	width: 7%;
+	height: 10%;
+	background: #f44336;
+	bottom: -3%;
+	right:23%;
+	border-radius: 20px;
+}
+
+.fill-image
+{
+	position: absolute;
+	bottom: 5%;
+	left:5%;
+	width: 25%;
+	height: 5%;
+}
+
+.fill-image-reg
+{
+	margin-top: 10%;
+	width: 45%;
+	height: 50%;
+	border-radius: 20px;
+	background: #00bcd4;
+	float: left;
+}
+
+.fill-image-circle
+{
+	margin-top: 10%;
+	width: 8%;
+	height: 35%;	
+	margin-left: 4%;
+	border-radius: 50%;
+	float:left;
+}
 #content2
 {
 	width: 100%;
 	height: 120px;
-	margin-top: 40px;
+	margin-top: 60px;
 	text-align:justify;
-	letter-spacing: 0.03em;
 }
 #content2>span
 {
-	font-family: Lato;
+	font-family: lato-regular;
 	color:#673ab7;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 #Select
@@ -244,7 +329,6 @@ span#Summer{
 	margin-left: 10%;
 	text-align: center;
 	padding-top: 10px;
-	border: 2px solid #673ab7;
 	border-radius: 20px;
 	background-color: #e91e63;
 }
@@ -260,22 +344,25 @@ span#Summer{
 #bot-support
 {
 	width: 95%;
-	height:60px;
 	position: relative;
 	position: absolute;
 	position: fixed;
-	bottom: 20px;
+	bottom: 3%;
+}
+
+#bot-support>button
+{
+	border-style: none;
 }
 
 #support
 {
 	width:8%;
-	height: 50%;
 	margin-left: 95%;
 	border-radius: 20px;
-	background-color: yellow;
+	background-color: #ffc107;
 	text-align: center;
-	padding-top:10px;
+	padding:10px 5px;
 }
 
 #support>a:hover
@@ -289,17 +376,72 @@ span#Summer{
 }
 #support>a>span
 {
-	font-family: Lato;
-	color: #ffffff;
-	font-size: 16px;
+	font-family: lato-regular;
 	font-weight: bold;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.but-prev
+{
+	position: absolute;
+	left:10px;
+	top:40%;
+	border-radius: 15px;
+	border: 2px solid #00bcd4;
+	padding: 2px 5px;
+}
+.but-prev>span
+{
+	color:#00bcd4;
+}
+.but-next
+{
+	position: absolute;
+	right:10px;
+	top:40%;
+	border-radius: 15px;
+	border: 2px solid #e91e63;
+	padding: 2px 5px;
+	background: #e91e63;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.but-next.teacher-next
+{
+	position: absolute;
+	right: -17%;
+}
+
+.but-next>span
+{
+	color:#ffffff;
+}
+
+.but-circle
+{	
+	position: relative;	
+	position: absolute;
+	bottom: 0px;
+	width:38px;
+	height: 38px;
+	border-radius: 50%;
+	background: #00bcd4;
+	left: 1%;
+}
+
+.but-circle-arrow
+{
+	width: 80%;
+	padding: 25%;
 }
 
 #course-layout
 {
 	width:100%;
-	padding-top:10px;
-	height: 550px;
+	padding-top:20px;
+	height: 690px;
 	position: relative;
 }
 
@@ -307,40 +449,22 @@ span#Summer{
 {
 	width: 95%;
 	margin:auto;
-	margin-top:10%;
+	margin-top:5%;
 	height: 80%;
 	display: flex;
 }
 
 .course-box-learn
 {
-	width: 250px;
+	width: 25%;
 	height: 100%;
 	margin-left:10%;
 }
 
-#course-icon-n5
+.course-icon
 {
-	width: 250px;
+	width: 100%;
 	height: 45%;
-	background-image: url("../fonts/N5.png");
-	background-size: 100% 100%;
-}
-
-#course-icon-n4
-{
-	width: 250px;
-	height: 45%;
-	background-image: url("../fonts/N4.png");
-	background-size: 100% 100%;
-}
-
-#course-icon-n3
-{
-	width: 250px;
-	height: 45%;
-	background-image: url("../fonts/N3.png");
-	background-size: 100% 100%;
 }
 
 .course-header
@@ -382,41 +506,19 @@ span#Summer{
 .course-content>span
 {
 	font-size:13px;
-	font-family: Lato;
+	font-family: lato-regular;
 }
 
-.button-register-n5
+
+.button-register-n
 {
+
 	margin: auto;
+	margin-top: 10%;
 	width: 50%;
-	height: 25px;
 	border-radius: 20px;
 	text-align: center;
-	background-color: #00bcd4;
-	padding: 10px;
-}
-
-.button-register-n4
-{
-	margin: auto;
-	width: 50%;
-	height: 25px;
-	border-radius: 20px;
-	text-align: center;
-	background-color: #673ab7;
-	padding: 10px;
-}
-
-.button-register-n3
-{
-	margin: auto;
-	width: 50%;
-	height: 25px;
-	border-radius: 20px;
-	text-align: center;
-	background-color: #e91e63;
-	padding: 10px;
-
+	padding: 10px 5px;
 }
 
 a.button-font
@@ -429,7 +531,8 @@ a.button-font
 
 #book-layout
 {
-        padding-top:100px;
+	margin-top: 100px;
+	padding-top:50px;
 	width: 100%;
 	height: 600px;
 	position: relative;
@@ -497,9 +600,22 @@ a.button-font
 	top: 38%;
 	left: 43%;
 	background-color: #673ab7;
-	border-radius: 20px;
+	border-radius: 40px;
 }
 
+#video-icon
+{
+	width: 40%;
+	height: 70%;
+	margin-top: 7px;
+	margin-left: 28px;
+}
+#video-icon>span
+{
+	font-family: themify;
+	font-size: 40px;
+	color: #ffffff;
+}
 #book-layout-left-ul
 {
 	width:100%;
@@ -520,7 +636,7 @@ a.button-font
 #book-layout-left-ul>ul>li>span>span
 {
 	color: #673ab7;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: vnf-quicksand;
 
 }
@@ -529,11 +645,10 @@ a.button-font
 {
 	margin-left: 10%;
 	width: 30%;
-	height: 25px;
 	border-radius: 20px;
 	text-align: center;
 	background-color: #00bcd4;
-	padding: 10px;
+	padding: 10px 5px;
 }
 .button-register-book>a{
 	font-family: Lato;
@@ -544,22 +659,18 @@ a.button-font
 {
 	margin-top:;
 	width:100%;
-	/*height: 600px;*/
+	height: 690px;
 	position: relative;
 	display: table;
 }
 
 #student-function
 {
-	margin-top:200px;
+	margin-top:15%;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: :5%;
 	height: 300px;
-/*	position: relative;
-/**/	
-	/*display: flex;*/
-
 }
 
 .student-box
@@ -572,12 +683,12 @@ a.button-font
 
 @media (max-width: 992px){
 	.student-box{
-		width: 40%;
+		width: 30%;
 	}
 }
 .student-circle {
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -595,7 +706,7 @@ a.button-font
 }
 
 .student-header>a{
-	font-size: 14px;
+	font-size: 15px;
 	font-family: vnf-quicksand;
 	text-decoration: none;
 	color: black;
@@ -610,7 +721,6 @@ a.button-font
 #teacher
 {
 	width: 100%;
-	margin-top: 150px;
 	display: flex;
 
 }
@@ -619,7 +729,7 @@ a.button-font
 {	
 	float: left;
 	width: 50%;
-	height: 640px;
+	height: 690px;
 	background: linear-gradient(
 		to top,
 		rgba(255,255,255,0),
@@ -633,7 +743,7 @@ a.button-font
 {	
 	float: left;
 	width: 50%;
-	height: 600px;
+	height: 690px;
 }
 
 #teacher-content
@@ -643,7 +753,38 @@ a.button-font
 	margin-left: 15%;
 	margin-top:15%;
 	text-align: justify;
+	position: relative;
 }
+
+.fill-teacher-reg-big
+{
+	width: 15%;
+	height: 4%;
+	position: absolute;
+	left: -17%;
+	top: 3.5%;
+	background: #00bcd4;
+	border-radius: 20px;
+}
+.fill-teacher-reg-small
+{
+	width: 8%;
+	height: 4%;
+	position: absolute;
+	left: -10%;
+	top: -2.5%;
+	border-radius: 20px;
+	background: #e91e63;
+}
+#fill-teacher-content-bot
+{
+	width: 35%;
+	height: 9%;
+	position: absolute;
+	bottom: -12%;
+	left: 0px;
+}
+
 @media (max-width: 768px){
 	#teacher {
 		height: 1200px;
@@ -661,7 +802,7 @@ a.button-font
 }
 #teacher-content>p
 {
-	font-family: 'lato-Italic';
+	font-family: 'lato-regular';
 	font-size: 13px;
 	letter-spacing: 1px;
 }
@@ -672,8 +813,8 @@ a.button-font
 }
 #blog{
 	width: 100%;
-	height: 630px;
-	margin-top: 50px;
+	height: 690px;
+/*	margin-top: 50px;*/
 	position: relative;
 }
 #blog-menu
@@ -685,7 +826,7 @@ a.button-font
 #blog-content
 {
 	width: 100%;
-	height: 570px;
+	height: 630px;
 	position: relative;
 	background-color: #f9f9f9;
 }
@@ -693,52 +834,71 @@ a.button-font
 #comment1
 {
 	width: 40%;
-	height: 35%;
+	height: 30%;
 	position: absolute;
-	top:8%;
-	left: 5%;
+	top:4%;
+	left: 8%;
 	position: relative;
 	border-radius: 20px;
 	text-align: justify;
 	background-color: #ffffff;
-	padding: 5px;
+	padding: 20px;
+	box-shadow:20px 20px 40px 0 rgba(0, 0, 0, 0.2)
+}
+.fill-comment-reg-big
+{
+	width: 60px;
+	height: 13px;
+	position: absolute;
+	left: -11%;
+	top: 16%;
+	border-radius: 20px;
+}
+.fill-comment-reg-small
+{
+	width: 30px;
+	height: 13px;
+	position: absolute;
+	left: -5%;
+	top: 7%;
+	border-radius: 20px;
 }
 
 #comment2{
-	width:35%;
-	height: 30%;
+	width:30%;
+	height: 25%;
 	position: absolute;
-	top:18%;
+	top:12%;
 	right:8%;
 	border-radius: 20px;
 	text-align: justify;
 	background-color: #ffffff;
-	padding: 5px;
+	padding: 20px;
 }
 
 #comment3
 {
-	width: 35%;
-	height: 30%;
+	width: 30%;
+	height: 25%;
 	position: absolute;
 	bottom: 13%;
-	left:12%;
+	left:17%;
 	border-radius: 20px;
 	text-align: justify;
 	background-color: #ffffff;
-	padding: 5px;
+	padding: 15px;
 }
 
 #comment4{
-	width: 32%;
-	height: 26%;
+	width: 30%;
+	height: 23%;
 	position: absolute;
 	bottom: 13%;
-	right:11%;
+	right:8%;
 	border-radius: 20px;
 	text-align: justify;
 	background-color: #ffffff;
-	padding: 5px;
+	padding: 15px;
 }
 
 .img1
@@ -773,27 +933,26 @@ a.button-font
 .comment-font
 {
 	font-family: lato-regular;
-	font-size:11px;
+	font-size:12.5px;
 }
 
 #contact
 {
 	width: 100%;
 	position: relative;
-	margin-top: 50px;
 	display: flex;
 }
 
 #contact-left
 {
-	height: 650px;
+	height: 690px;
 	width: 50%;
 	float: left;
 }
 
 #contact-right
 {
-	height: 650px;
+	height: 690px;
 	width: 50%;
 }
 #input-header
@@ -871,7 +1030,7 @@ a.button-font
 {
 	position: absolute;
 	top: 1px;
-	width: 90%;
+	width: 89%;
 	height: 90%;
 	margin-left:28px;
 	border-radius: 15px;
@@ -937,7 +1096,7 @@ input[placeholder]{
 #last-layout
 {
 	width: 100%;
-	height: 580px;
+	height: 640px;
 	background: #00bcd4;
 	position: relative;
 }
@@ -945,22 +1104,32 @@ input[placeholder]{
 #last-layout-logo
 {
 	width: 100%;
-	height: 250px;
+	height: 180px;
+	position: relative;
 }
 
+#hapo-logo
+{
+	position: absolute;
+	left:40%; 
+	width: 15%;
+	height: 40%;
+	top: 25%;
+}
 #last-layout-left
 {
 	width: 66%;
-	height: 100%;
+	height: 460px;
 	margin-left: 3%;
 	position: relative;
 	float:left;
+	
 }
 
 #last-menu
 {
 	width: 100%;
-	height: 50%;
+	height: 45%;
 }
 
 .last-menu-cols
@@ -983,7 +1152,7 @@ input[placeholder]{
 {
 	width: 100%;
 	height: 7%;
-	margin-top: 12%;
+	margin-top: 8%;
 
 }
 
@@ -992,15 +1161,16 @@ input[placeholder]{
 	width: 100%;
 	height: 5%;
 	margin-top: 6%;
-
+	user-select:none;
 }
 
 #last-layout-right
 {
 	width: 29%;
-	height: 100%;
+	height: 400px;
 	float:left;
 	position: relative;
+	
 }
 
 .last-menu-cols>.text-menu>a
@@ -1011,7 +1181,11 @@ input[placeholder]{
 	color: white;
 	font-family: lato-regular;
 }
-
+.last-menu-cols>.text-menu>a:hover
+{
+	text-decoration-style: none;
+	color: red;
+}
 .last-menu-header
 {
 	width: 98%;
@@ -1043,10 +1217,18 @@ input[placeholder]{
 	float: left;
 	margin-top: 10px;	
 }
- .icon-box>span
+ .icon-box>a
  {
  	color: #ffffff;
  	font-style: 16px;
+ 	text-decoration:none;
+ }
+
+ .icon-box>a:hover
+ {
+ 	text-decoration-style: none;
+ 	color: #333;
+
  }
 .set-box
 {
@@ -1076,5 +1258,4 @@ input[placeholder]{
 	width: 100%;
 	height: 400px;
 	position: absolute;
-	top:30%;
 }
