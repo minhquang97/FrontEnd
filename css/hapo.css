@@ -620,7 +620,7 @@ a.button-font
 	position: absolute;
 	top: 10%;
 	left: 10%;
-	background-image: url('../images/875c27f88aa8506dc976795e7db06910cfd2ccd0.png');
+	background-image: url('../images/875c27f88aa8506dc976795e7db06910cfd2ccd0.jpg');
 	background-size: 100% 100%;
 	border-radius: 20px;
 	position: relative;
@@ -633,7 +633,7 @@ a.button-font
 	position: absolute;
 	top:1px;
 	left:1px;
-	background-image: url("../images/e3c05783d7718cde5781783c4aea6837285589d5.png");
+	background-image: url("../images/e3c05783d7718cde5781783c4aea6837285589d5.jpg");
 	background-size: 100% 100%;
 	border-radius: 20px;
 }
@@ -751,7 +751,7 @@ a.button-font
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	margin-left: 10px;
-	background-image: url('../images/aa9fb3f352e89b54044977146d31604779c457d5.png');
+	background-image: url('../images/aa9fb3f352e89b54044977146d31604779c457d5.jpg');
 	background-size: 100% 100%;
 
 }
@@ -793,7 +793,7 @@ a.button-font
 		rgba(255,255,255,0),
 		rgba(255,255,255,0),
 		#ffffff 100%
-		), url("../images/40a6147feea84e1e80734f5ae3d7429dac2ae702.png");
+		), url("../images/40a6147feea84e1e80734f5ae3d7429dac2ae702.jpg");
 	background-size: cover;
 }
 
@@ -1028,29 +1028,10 @@ a.button-font
 	height: 690px;
 	width: 50%;
 }
-#input-header
+#contact-right>iframe
 {
 	width: 100%;
-	height: 12%;
-	border-radius:15px;
-}
-
-.input-sub-box
-{
-	margin-top: 5%;
-	width: 100%;
-	height: 5%;
-	border: 2px solid #00bcd4;
-	border-radius:15px;
-	position: relative;
-	display: inline-block;
-
-}
-.input-sub-box:hover
-{
-	border: 1px solid #673ab7 ;
-	box-shadow: 0 0 5px 0 #673ab7;
-
+	height: 690px;
 }
 
 #input-box
@@ -1061,6 +1042,32 @@ a.button-font
 	height: 70%;
 	position: relative;
 }
+
+
+#input-header
+{
+	width: 100%;
+	height: 50px;
+	border-radius:15px;
+}
+
+.input-sub-box
+{
+	margin-top: 5%;
+	width: 100%;
+	height: 25px;
+	border: 2px solid #00bcd4;
+	border-radius:15px;
+	position: relative;
+	display: inline-block;
+}
+.input-sub-box:hover
+{
+	border: 1px solid #673ab7 ;
+	box-shadow: 0 0 5px 0 #673ab7;
+
+}
+
 
 .input-sub-box input,
 .input-sub-box textarea
@@ -1092,7 +1099,7 @@ a.button-font
 #input-content
 {
 	width: 100%;
-	height: 25%;
+	height: 130px;
 	margin-top: 5%;
 	border-radius: 15px;
 	border: 1px solid #00bcd4;
@@ -1336,4 +1343,10 @@ input[placeholder]{
 	width: 100%;
 	height: 400px;
 	position: absolute;
+}
+
+#plugin-facebook>iframe
+{
+	 width : 390px;
+	 height: 430px; 
 }
