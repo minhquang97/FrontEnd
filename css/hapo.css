@@ -204,7 +204,7 @@ body{
 
 #content1
 {
-	
+	border: solid black;
 	position: relative;
 	width: 100%;
 	margin-top: 75px;
@@ -222,7 +222,7 @@ span#summer{
 	width: 76px;
 	height: 19px;
 	background: #00bcd4;
-	top: -20px;
+	top: -10px;
 	left: -80px;
 	border-radius: 20px;
 }
@@ -233,7 +233,7 @@ span#summer{
 	width: 25px;
 	height: 19px;
 	background: #f44336;
-	top: 5px;
+	top: 15px;
 	left: -30px;
 	border-radius: 20px;
 }
