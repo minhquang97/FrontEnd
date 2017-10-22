@@ -4,10 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="http://www.nhk.or.jp/apple-touch-icon-152x152-precomposed.png" />
+
 	<title>Intern_Frontend</title>
 	<link rel="stylesheet" href="css/hapo.css">
 	<link rel="stylesheet" href="fonts/themify-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
 </head>
 <body>
 	<div id="layout">
@@ -44,8 +47,13 @@
 			<div class="fill-image-circle circle-right"></div>
 		</div>
 		<img src="fonts/slide-section1.jpg" alt="slide-section1">
-		<div class="but-prev"><span class="ti-arrow-left" > </span><span>Prev</span></div>
-		<div class="but-next"><span>Next &nbsp;</span><span class="ti-arrow-right" ></span></div>
+		<div class="but-prev"><span class="ti-arrow-left" > </span><span id="but-p">PREV</span></div>
+		<div class="but-next"><span id="but-n">NEXT&nbsp;</span><span class="ti-arrow-right" ></span></div>
+	</div>
+	<div id="bot-click"> 
+	<span class="ti-mouse-alt"></span>
+	<br/>
+	<span class="ti-angle-double-down"> </span>
 	</div>
 	</div>
 	
@@ -89,8 +97,9 @@
 
 		</div>
 	</div>
+	<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 	</div>
-	<br/>
 	<div id="book-layout"> 
 		<div id="book-layout-left"> 
 			<div id="book-layout-left-ul">
@@ -99,11 +108,11 @@
 				<li><span class="icon-badge"><span>&nbsp;&nbsp;&nbsp;&nbsp;Giảng viên trình độ cao</span></span></li>
 				<li><span class="icon-trophy"><span>&nbsp;&nbsp;&nbsp;&nbsp;Giáo trình mua bản quyền từ Nhật</span></span></li>
 				<li><span class="icon-like"><span>&nbsp;&nbsp;&nbsp;&nbsp;Chương trình học trực quan</span></span></li>
-				<li><span class="icon-clock"><span>&nbsp;&nbsp;&nbsp;&nbsp; Thời gian thực hành nhiều</span></span></li>
+				<li><span class="icon-clock"><span>&nbsp;&nbsp;&nbsp; &nbsp;Thời gian thực hành nhiều</span></span></li>
 
 			</ul>
 			</div>
-			<div class="button-register-book"> <a href="#" class="button-font"> Đăng kí học thử &nbsp;&rarr;</a></div>
+			<div class="button-register-book"> <a href="#" class="button-font"> đăng kí học thử &nbsp;&rarr;</a></div>
 		</div>
 		<div id="book-layout-right">
 			<div id="book-layout-right-middle-img">
@@ -114,7 +123,8 @@
 				<div id='video-icon'> <span class="ti-control-forward" ></span></div>
 			</div></a>
 		</div>
-
+		<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 	</div>
 	<div id="student">
 		<div id="student-function">
@@ -139,13 +149,17 @@
 				<div class="student-header"><a href="#">Đi học</a></div>
 			</div>
 		</div>
+		<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 	</div>
 		
 	<div id="teacher">
+		<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 		<div id="teacher-left">  </div>
 		<div id="teacher-right">
 			<div id="teacher-content">
-				<div class="but-next teacher-next"><span>Next &nbsp;</span><span class="ti-arrow-right"></span></div>
+				<div class="but-next teacher-next"><span id="but-next-teacher">Next &nbsp;</span><span class="ti-arrow-right"></span></div>
 				<div class="fill-teacher-reg-big"></div>
 				<div class="fill-teacher-reg-small"></div>
 				<div id="fill-teacher-content-bot">
@@ -154,7 +168,7 @@
 				<div class="fill-image-circle circle-mid"></div>
 				<div class="fill-image-circle circle-right"></div>
 				</div>
-				<h2><span style="color: #673ab7 ">Giảng viên </span> <span style="color: #00bcd4">Nguyễn Thị Mai Linh</span></h2><br/>
+				<h2><span style="color: #00bcd4 ">Giảng viên </span> <span style="color: #673ab7">Nguyễn Thị Mai Linh</span></h2><br/>
 				<p>	Unless you have the dubious pleasure of living right next door to an airport one of the biggest downsides of going on holiday is catching a flight at an ungodly hour of the day. While driving half asleep at 4.00 am, with a nagging doubt you have forgot something may be some holidaymaker’s idea of fun – for most it sounds like a bad way to start your holiday. </p>
 				<p>However, help is at hand in the form of Airport Hotels, where you can spend a relaxed evening – and even afford an extra hour or two in bed before leaving.</p>
 				<p>Airport hotels may not enjoy the best of reputations. In many peoples mind they are ranked alongside train station pubs – filled with chain smoking business men in cheap suits. However, while there is certainly a convincing argument to avoid train station pubs (you have to pay to get in the toilet for starters), airport hotels are a long way from their cheap and not-so-cheerful roots. These days the savvy traveller can pick up a great value deal at some excellent hotel accommodation situated close to their airport of departure.</p>
@@ -214,7 +228,8 @@
 				<span>BẠN PHÍ HÔNG NHUNG<br/><span> 180/180 điểm N3</span></span>
 			</div>
 		</div>
-	</div>
+	<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 	</div>
 	<div id="contact">
 		<div id=contact-left>
@@ -222,34 +237,44 @@
 			<form id="input-box" action="https://google.com">
 				<div id="input-header"><span>Đăng ký tư vấn</span></div>
 				<div class="input-sub-box">
-				<span class="icon-user"></span>
+				<div id="input-content-icon"><span class="icon-user"></span></div>
 				<input  type="text" name="name" placeholder="Tên của bạn"  ></div>
 				
 				<div class="input-sub-box">
-				<span class="icon-envelope"></span>
+				<div id="input-content-icon"><span class="icon-envelope"></span></div>
 				<input  type="text" name="email" placeholder="Email"  ></div>
 				
 				<div class="input-sub-box">
-				<span class="icon-screen-smartphone"></span>
-				<input  type="text" name="numberphone" placeholder="Số điện thoại"  ></div>
+				<div id="input-content-icon"><span class="icon-screen-smartphone"></span></div>
+				<input  type="text" name="numberphone" placeholder="Số điện thoại" ></div>
 				
 				<div class="input-sub-box">
-				<span class="icon-heart"></span>
+				<div id="input-content-icon"><span class="icon-heart"></span></div>
 				<input  type="text" name="course" placeholder="Khóa học bạn quan tâm"  >
-				<div id="simple-lines-icon-arow-down"><span class="icon-arrow-down"> </span></div>
+				<div id="simple-lines-icon-arow-down"><span class="icon-arrow-down" style="font-size: 22px;"> </span></div>
 				</div>
 
 				<div id="input-content">
 					<span class="icon-speech"></span>
-					<textarea name="message" rows="5" cols="30" placeholder="Để lại lời nhắn"></textarea>
+					<textarea maxlength="100" name="message" rows="5" cols="30" placeholder="Để lại lời nhắn"></textarea>
 				</div>
 				
 				<input type="button" id="input-button" value="Gửi đăng ký &nbsp; &rarr;">
 			</form>
 		</div>
 		<div id="contact-right"> 
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8130201700938!2d105.81926694994739!3d21.000130994063547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac85be3a80f7%3A0x26f3b5f7c126cf4c!2zMjMgVMO0IFbEqW5oIERp4buHbiwgS2jGsMahbmcgVHJ1bmcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1507891640990" style="border:0"></iframe>
+		<div id="map-address-image">
+			<img src="images/map-image.png">
 		</div>
+		<div id="map-content"><span>
+			Địa chỉ: Tầng 6, Số 23 Tô Vĩnh Diện, Quận Thanh Xuân, HN<br/> 
+			Số điện thoại: 123456789<br/>
+			Email: hapojc@haposoft.com<span>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.813145149011!2d105.81926695013875!3d21.000125985945356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1508646181297" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
+		</span></div></div>
 	</div>
 	
 
@@ -345,7 +370,7 @@
 
 		<div id="last-layout-right">
 			<div id="plugin-facebook">
-				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaposoft%2F&tabs=timeline&width=390&height=430&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden"></iframe>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaposoft%2F&tabs=timeline&width=430&height=630&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden"></iframe>
 			</div>
 		</div>
 
@@ -369,11 +394,7 @@
 			<div class="button-icon"><a href="#" ><span class="icon-magnifier" ></span></a></div>
 	 	</div>
 	</div>
-	<div id="bot-support">
-		<a href="#"><div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
-		</span></div></div></a>
-		<button id="support"> <a href="#"><span >Hỗ trợ  <span class="ti-help-alt" ></span></span></a>
-		</button>
+	<div id="bot-support" id="support"> <a href="#"><span >HỖ TRỢ &nbsp;  <span class="ti-help-alt" ></span></span></a>
 	</div>
 
 </body>
