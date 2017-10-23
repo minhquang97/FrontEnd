@@ -1092,25 +1092,24 @@ a.button-font
 
 #input-box
 {
-	
-	width:48%;
+	width:50%;
 	margin-left: 27%;
 	margin-top: 21%;
-	height: 60%;
+	height: 70%;
 	position: relative;
 }
 
 
 #input-header
 {
-	width: 100%;
+	width: 95%;
 	height: 50px;
 }
 
 .input-sub-box
 {
-	margin-top: 20px;
-	width: 100%;
+	margin-top:30px;
+	width: 450px;
 	height: 50px;
 	border: 2px solid #00bcd4;
 	border-radius:50px;
@@ -1118,11 +1117,12 @@ a.button-font
 }
 
 .input-sub-box input,
-.input-sub-box text
+.input-sub-box textarea
 {
 	width: 80%;
 	height: 90%;
 	margin-left:60px;
+	font-size: 18px;
 	border-radius: 15px;
 	font-family: lato-regular;
 	border: none;
@@ -1134,7 +1134,7 @@ a.button-font
 	box-shadow: 0 0 10px 0 #673ab7;
 }
 
-.input-sub-box>div#input-content-icon
+.input-sub-box>div.input-content-icon
 {
 	max-width: 50px;
 	position: absolute;
@@ -1142,7 +1142,7 @@ a.button-font
 	top: 10px; 
 }
 
-.input-sub-box>div#input-content-icon>span
+.input-sub-box>div.input-content-icon>span
 {
 	font-size: 22px;
 	text-align: center;
@@ -1158,7 +1158,7 @@ a.button-font
 
 
 
-.input-sub-box>div#input-content-icon>span
+.input-sub-box>div.input-content-icon>span
 {
 	position: absolute;
 	top: 3px;
@@ -1168,7 +1168,7 @@ a.button-font
 
 #input-content
 {
-	width: 100%;
+	width: 95%;
 	height: 200px;
 	margin-top: 5%;
 	border-radius: 25px;
@@ -1179,9 +1179,9 @@ a.button-font
 #input-content textarea
 {
 	position: absolute;
-	top: 8px;
+	top: 6px;
 	width: 80%;
-	height: 85%;
+	height: 75%;
 	margin-left:60px;
 	border-radius: 10px;
 	font-family: lato-regular;
@@ -1189,7 +1189,7 @@ a.button-font
 	resize: none;
 }
 
-text:focus, textarea:focus, input:focus{
+ textarea:focus, input:focus{
 	outline:none;
 }
 
