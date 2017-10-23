@@ -1115,13 +1115,23 @@ a.button-font
 	border: 2px solid #00bcd4;
 	border-radius:50px;
 	position: relative;
-	display: inline-block;
+}
+
+.input-sub-box input,
+.input-sub-box text
+{
+	width: 80%;
+	height: 90%;
+	margin-left:60px;
+	border-radius: 15px;
+	font-family: lato-regular;
+	border: none;
+	resize: none;
 }
 .input-sub-box:hover
 {
 	border: 1px solid #673ab7 ;
-	box-shadow: 0 0 5px 0 #673ab7;
-
+	box-shadow: 0 0 10px 0 #673ab7;
 }
 
 .input-sub-box>div#input-content-icon
@@ -1138,17 +1148,6 @@ a.button-font
 	text-align: center;
 }
 
-.input-sub-box input,
-.input-sub-box textarea
-{
-	width: 80%;
-	height: 90%;
-	border:none;
-	margin-left:60px;
-	border-radius: 15px;
-	font-family: lato-regular;
-
-}
 #simple-lines-icon-arow-down
 {
 	position: absolute;
@@ -1190,7 +1189,7 @@ a.button-font
 	resize: none;
 }
 
-textarea:focus, input:focus{
+text:focus, textarea:focus, input:focus{
 	outline:none;
 }
 
