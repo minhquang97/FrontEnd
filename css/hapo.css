@@ -25,13 +25,6 @@
 	src: url('../fonts/vnf-quicksand-bold.ttf');
 }
 
-@media (min-width: 320px)and (max-width: 768px){
-	body{
-		background: #e7e7e7;
-		/*width: 320px;*/
-
-	}
-}
 
 body{
 	width: 1910px;
@@ -184,7 +177,7 @@ body{
 
 #content
 {
-	
+		
 	position: relative;
 	width: 60%;
 	height: 85%;
@@ -222,8 +215,11 @@ span#summer{
 	width: 76px;
 	height: 19px;
 	background: #00bcd4;
+	bottom: 0;
+	right: 0;
 	top: -20px;
 	left: -80px;
+
 	border-radius: 20px;
 }
 
@@ -329,10 +325,8 @@ span#summer{
 
 #next
 {
-	width: 136px;
-	height: 38px;
 	border:2px solid;
-	padding-top:8px;
+	padding: 11px 13px;
 	text-align: center;
 	border-radius: 100px;
 	border-color: #673ab7;
@@ -347,11 +341,9 @@ span#summer{
 
 #learn
 {
-	width: 190px;
-	height: 38px;
 	margin-left: 22px;
 	text-align: center;
-	padding-top: 8px;
+	padding: 11px 13px;
 	border-radius: 100px;
 	background-color: #e91e63;
 }
@@ -596,7 +588,7 @@ span>.ti-arrow-right
 	margin: auto;
 	border-radius: 50px;
 	text-align: center;
-	padding: 10px 1px;
+	padding: 10px 0;
 }
 .button-register.regis-n5{background: #00bcd4;}
 .button-register.regis-n4{background: #673ab7;}
@@ -721,15 +713,16 @@ a.button-font
 	color: #673ab7;
 	font-size: 24px;
 	font-family: vnf-quicksand;
+	margin-left: 20px
 }
 
 .button-register-book
-{
-	max-width: 175px;
+{	
+	max-width: 160px; 
 	border-radius: 100px;
 	text-align: center;
 	background-color: #00bcd4;
-	padding: 11px 5px;
+	padding: 11px 2px;
 	margin-left: 45px;
 }
 .button-register-book>a{
@@ -1122,7 +1115,7 @@ a.button-font
 }
 .input-sub-box:hover
 {
-	border: 1px solid #673ab7 ;
+	border: 2px solid #673ab7 ;
 	box-shadow: 0 0 5px 0 #673ab7;
 
 }

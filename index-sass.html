@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="http://www.nhk.or.jp/apple-touch-icon-152x152-precomposed.png" />
 
 	<title>Intern_Frontend</title>
-	<link rel="stylesheet" href="css/hapo.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fonts/themify-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
 </head>
 <body>
-	<div id="layout">
-	<div class="layout-sub">
+	<div id="home-page">
+	<div class="layout-half">
 		<div id="content">
-			<div id="img-hapojc"></div>
+			<div id="img-hapojc">
+				<img src="fonts/logo.png" alt="logo-hapo">
+			</div>
 			
-			<div id="content1">
+			<div id="content-top">
 			<div id=fill-content-small-top></div>
 			<div id=fill-content-reg-top></div>
 			<div id=fill-content-reg-bot-top></div>
 			<div id=fill-content-reg-bot-bot></div>
 			<div id=fill-content-small-bot></div>
-				<span id="summer">Summer is often synonymous with beachs, ballparks and barbecues</span>
+				<span>Summer is often synonymous with beachs, ballparks and barbecues</span>
 			</div>
 			
-			<div id="content2">
+			<div id="content-bot">
 			<span>Summer is often synonymous with beachs, ballparks and barbecues,all offerring tempting snacks and treats. Tomany women who are watching their weight, the back-to-school season is an ideal time to enroll in their own "Making Smater Food Choices 101" class....
 				</span>
 			</div>
@@ -104,11 +107,11 @@
 		<div id="book-layout-left"> 
 			<div id="book-layout-left-ul">
 			<ul>
-				<li><span class="icon-star"><span>Phương pháp học hoàn toàn mới</span></span></li>
-				<li><span class="icon-badge"><span>Giảng viên trình độ cao</span></span></li>
-				<li><span class="icon-trophy"><span>Giáo trình mua bản quyền từ Nhật</span></span></li>
-				<li><span class="icon-like"><span>Chương trình học trực quan</span></span></li>
-				<li><span class="icon-clock"><span>Thời gian thực hành nhiều</span></span></li>
+				<li><span class="icon-star"><span>&nbsp;&nbsp;&nbsp;&nbsp;Phương pháp học hoàn toàn mới</span></span></li>
+				<li><span class="icon-badge"><span>&nbsp;&nbsp;&nbsp;&nbsp;Giảng viên trình độ cao</span></span></li>
+				<li><span class="icon-trophy"><span>&nbsp;&nbsp;&nbsp;&nbsp;Giáo trình mua bản quyền từ Nhật</span></span></li>
+				<li><span class="icon-like"><span>&nbsp;&nbsp;&nbsp;&nbsp;Chương trình học trực quan</span></span></li>
+				<li><span class="icon-clock"><span>&nbsp;&nbsp;&nbsp; &nbsp;Thời gian thực hành nhiều</span></span></li>
 
 			</ul>
 			</div>
@@ -179,8 +182,7 @@
 
 
 	<div id="blog">
-		<div id="blog-menu">
-		</div>
+		<div id="blog-menu">	</div>
 		<div id="blog-content">
 		<div id="comment-top-left">
 			<div class="fill-comment-reg-small"  ></div>
@@ -192,6 +194,7 @@
 				<span>BẠN PHÍ HÔNG NHUNG<br/><span> 180/180 điểm N3</span></span>
 			</div>
 		</div>
+
 		<div id="comment-top-right">
 		<div class="fill-comment-reg-small" ></div>
 			<div class="fill-comment-reg-big " ></div>
@@ -231,25 +234,26 @@
 	<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
 		</span></div></div>
 	</div>
+	</div>
 	<div id="contact">
 		<div id=contact-left>
 		
-			<form id="input-box" action="https://google.com">
+			<form id="input-box" action="https://google.com" >
 				<div id="input-header"><span>Đăng ký tư vấn</span></div>
 				<div class="input-sub-box">
-				<div id="input-content-icon"><span class="icon-user"></span></div>
+				<div class="input-content-icon"><span class="icon-user"></span></div>
 				<input  type="text" name="name" placeholder="Tên của bạn"  ></div>
 				
 				<div class="input-sub-box">
-				<div id="input-content-icon"><span class="icon-envelope"></span></div>
+				<div class="input-content-icon"><span class="icon-envelope"></span></div>
 				<input  type="text" name="email" placeholder="Email"  ></div>
 				
 				<div class="input-sub-box">
-				<div id="input-content-icon"><span class="icon-screen-smartphone"></span></div>
+				<div class="input-content-icon"><span class="icon-screen-smartphone"></span></div>
 				<input  type="text" name="numberphone" placeholder="Số điện thoại" ></div>
 				
 				<div class="input-sub-box">
-				<div id="input-content-icon"><span class="icon-heart"></span></div>
+				<div class="input-content-icon"><span class="icon-heart"></span></div>
 				<input  type="text" name="course" placeholder="Khóa học bạn quan tâm"  >
 				<div id="simple-lines-icon-arow-down"><span class="icon-arrow-down" style="font-size: 22px;"> </span></div>
 				</div>
@@ -264,14 +268,14 @@
 		</div>
 		<div id="contact-right"> 
 		<div id="map-address-image">
-			<img src="images/map-image.png">
+			<img src="images/map-image.png" alt="hapo-address">
 		</div>
 		<div id="map-content"><span>
 			Địa chỉ: Tầng 6, Số 23 Tô Vĩnh Diện, Quận Thanh Xuân, HN<br/> 
 			Số điện thoại: 123456789<br/>
-			Email: hapojc@haposoft.com<span>
+			Email: hapojc@haposoft.com</span>
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.813145149011!2d105.81926695013875!3d21.000125985945356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1508646181297" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.813145149011!2d105.81926695013875!3d21.000125985945356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1508646181297" style="border:0"></iframe>
 		</div>
 		<div class="but-circle"><div class="but-circle-arrow"><span class="ti-angle-double-up">	
 		</span></div></div>
@@ -394,8 +398,7 @@
 			<div class="button-icon"><a href="#" ><span class="icon-magnifier" ></span></a></div>
 	 	</div>
 	</div>
-	<div id="bot-support" id="support"> <a href="#"><span >HỖ TRỢ &nbsp;  <span class="ti-help-alt" ></span></span></a>
+	<div id="bot-support"> <a href="#"><span >HỖ TRỢ &nbsp;  <span class="ti-help-alt" ></span></span></a>
 	</div>
-
 </body>
 </html>
