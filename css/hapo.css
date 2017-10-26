@@ -142,6 +142,7 @@ body{
 	margin-left:10px;
 	width: 125px;
 	background: #00bcd4;
+	
 }
 
 .span-lato-blue
@@ -352,6 +353,16 @@ span#summer{
 	background-color: #e91e63;
 }
 
+.ti-arrow-right
+{
+	margin-left: 10px;
+	font-size: 14px;
+}
+.ti-angle-double-right
+{
+	font-size: 14px;	
+	margin-left: -12px;
+}
 #learn>a
 {
 	font-family: Lato;
@@ -458,11 +469,12 @@ span.ti-help-alt
 .but-prev
 {
 	position: absolute;
-	left:32px;
-	top:48%;
+	left:65px;
+	top:50%;
 	border-radius: 100px;
 	border: 2px solid #00bcd4;
 	padding: 4px 10px;
+	transform: translate(-50%,-50%);
 }
 .but-prev>span#but-p
 {
@@ -480,13 +492,14 @@ span.ti-arrow-left,span.ti-arrow-right
 .but-next
 {
 	position: absolute;
-	right:32px;
-	top:48%;
+	right:-4px;
+	top: 50%;
 	border-radius: 100px;
 	border: 2px solid #e91e63;
 	padding: 4px 10px;
 	background: #e91e63;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+	transform: translate(-50%, -50%);
 }
 
 .but-next>span#but-n
@@ -592,7 +605,8 @@ span>.ti-arrow-right
 	margin: auto;
 	border-radius: 50px;
 	text-align: center;
-	padding: 10px 15px;
+	padding: 15px;
+	transform: 50% 50%;
 }
 .button-register.regis-n5{background: #00bcd4;}
 .button-register.regis-n4{background: #673ab7;}
@@ -881,7 +895,8 @@ a.button-font
 .but-next.teacher-next
 {
 	position: absolute;
-	right: -110px;
+	right: 0px;
+	transform: translate(-30%, -50%);
 }
 
 .but-next.teacher-next>span#but-next-teacher
@@ -1104,6 +1119,28 @@ a.button-font
 {
 	width: 95%;
 	height: 50px;
+	position: relative;
+}
+
+
+#input-header>.fill-comment-reg-big
+{
+	width: 100px;
+	background: #00bcd4;
+	position: absolute;
+	top: 25px;
+	left: 300px;
+}
+
+.circle-input-header
+{
+	width: 20px;
+	height: 20px;
+	background-color: #e91e63;
+	position: absolute;
+	top: 25px;
+	left: 410px;
+	border-radius: 50%;	
 }
 
 .input-sub-box
@@ -1214,10 +1251,10 @@ a.button-font
 	border:1px solid #00bcd4;
 	border-radius: 100px;
 	background: #00bcd4;
-	padding: 8px 10px;
-	padding-top: 5px;
+	padding: 10px;
+	transform: 45% 45%;
 }
-input[value]
+#input-button-style
 {
 	color: white;
 	font-family: lato-regular;
