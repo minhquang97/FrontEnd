@@ -27,14 +27,14 @@
 
 
 body{
-	width: 1910px;
+	width: 1900px;
 	margin:0;
 	padding:0;
 }
 
 #layout
 {
-	width:1910px;
+	width:1900px;
 	height: 1080px;
 }
 
@@ -151,6 +151,7 @@ body{
 	color: #00bcd4;
 	font-family: lato-regular;
 	font-size:14px;	
+	font-weight: bold;
 }
 .span-lato-white
 {
@@ -374,16 +375,16 @@ span#summer{
 
 #bot-support
 {
-	width: 120px;
 	position: absolute;
 	position: fixed;
 	bottom: 60px;
 	z-index: 10;
-	padding:8px 5px;
+	padding:15px;
 	border-radius:100px;
 	background-color: #ffc107;
 	text-align: center;
 	right: 14px;
+	transform: 50% 50%;
 }
 
 #bot-support>button
@@ -483,10 +484,15 @@ span.ti-help-alt
 	font-size: 14px;
 	color:#00bcd4;
 }
-span.ti-arrow-left,span.ti-arrow-right
+span.ti-arrow-right
 {
 	font-size: 14px;
 	color: #fff;
+}
+span.ti-arrow-left
+{
+	font-size: 14px;
+	color: #00bcd4;
 }
 
 .but-next
@@ -858,9 +864,9 @@ a.button-font
 }
 #teacher-content>p
 {
-	font-family: 'lato-regular';
+	font-family: lato-regular;
 	font-size: 16px;
-	letter-spacing: 1px;
+	letter-spacing: 0.2px;
 }
 
 .fill-teacher-reg-big
@@ -1159,7 +1165,7 @@ a.button-font
 	width: 80%;
 	height: 90%;
 	margin-left:60px;
-	font-size: 18px;
+	font-size: 16px;
 	border-radius: 15px;
 	font-family: lato-regular;
 	border: none;
@@ -1181,7 +1187,7 @@ a.button-font
 
 .input-sub-box>div.input-content-icon>span
 {
-	font-size: 22px;
+	font-size: 18px;
 	text-align: center;
 }
 
@@ -1236,7 +1242,7 @@ a.button-font
 	left: 17px;
 	top: 10px;
 	color: #00bcd4;
-	font-size: 22px;
+	font-size: 16px;
 }
 
 #input-content:hover
